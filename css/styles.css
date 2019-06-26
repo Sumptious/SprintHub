@@ -1,8 +1,11 @@
+*{
+    box-sizing: border-box;
+}
 body{
     margin: 0;
     padding: 0;
     font-family:  Helvetica ;
-    scroll-behavior: smooth;
+    /* scroll-behavior: smooth; */
 }
 .row-header {
     margin: 0px auto;
@@ -12,6 +15,9 @@ body{
         padding: 50px 0px;
         /* border-bottom: 1px ridge; */
         min-height: 400px; 
+    }
+    *box-sizing{
+
     }
         
 .grid{
@@ -44,18 +50,25 @@ body{
     grid-row: 3/ 4 ;
 }
 .ellipse{
-    position: absolute;
-    top: 25%;
+    /* position: absolute; */
+    margin-top: 18%;
     z-index: 1;
 }
 .bhood{
     position: absolute;
-    top: 5%;
-    left: 15%;
+    /* top: 5%; */
+    left: 12%;
     z-index: 2;
 }
 .app-content{
     padding: 30% 0 0 15%;
+}
+.display{
+    display: flex;
+    flex-wrap: wrap;
+}
+.display > div{
+    /* margin: 20px; */
 }
 .h5{
     font-size: 18px;
@@ -164,7 +177,7 @@ body{
 .display-4{
     font-weight: bold;
 }
-.ellipse{
+/* .ellipse{
     position: absolute;
     top: 25%;
     z-index: 1;
@@ -177,7 +190,7 @@ body{
 }
 .app-content{
     padding: 30% 0 0 15%;
-}
+} */
 
 .left{
     float:left;
@@ -464,4 +477,55 @@ hr{
 }
 .P-footer a{
     color: #fff;
+}
+
+@media only screen and (max-width: 425px) {
+    .position{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .sp-btn{
+        float: right;
+        display:block;
+    }
+    .top{
+        background-position: center !important;
+    }
+    .app-content{
+        /* padding: none; */
+    }
+    .ellipse{
+        /* top: 50%; */
+    }
+    .bhood{
+        position: absolute;
+        top: 0%;
+        left: 15%;
+        z-index: 2;
+    }
+}
+@media only screen and (max-width: 768px) {
+    body{
+        padding: none !important;
+    }
+    .top{
+        background-position: left center !important;
+    }
+    .bhood{
+        position: absolute;
+        top: 0%;
+        left: 15%;
+        z-index: 2;
+    }
+}
+@media only screen and (max-width: 1024px) {
+    .top{
+        background-position: center !important;
+    }
+    .bhood{
+        position: absolute;
+        top: 0%;
+        left: 15%;
+        z-index: 2;
+    }
 }
