@@ -1,38 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>SprintHub Mobile</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="node_modules/bootstrap-social/css/bootstrap-social.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
+
+    <link rel="stylesheet" href="./assets/css/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <script type="text/javascript" src="./assets/js/jquery.min.js"></script>
 </head>
+
 <body>
-    <div class="grid">
-        <nav class="navbar nav navbar-expand-sm">
-            <div class="container nav background">
-                <button class="navbar-toggler sp-btn"  type="button" data-toggle="collapse" data-target="#Navbar">
-                        <span id="button" class="fa fa-bars "></span>
-                </button>
+    <div class="wrapper">
+        <!-- Start navbar -->
+        <nav class="navbar nav sticky-top navbar-expand-sm">
+            <div class="container-fluid">
+
                 <a class="navbar-brand mr-auto" href="./index.html"><img src="image/Logo.png"></a>
-                    <div class="collapse navbar-collapse" id="Navbar">
-                        <ul class="navbar-nav ml-auto">
-                            <li class="nav-item active"><a class="nav-link" href="./works.html"> Works</a></li>
-                            <li class="nav-item"><a class="nav-link" href="./services.html"> Services</a></li>
-                            <li class="nav-item"><a class="nav-link" href="./company.html">Company</a></li>
-                            <li class="nav-item"><a class="nav-link" href="./careers.html">Careers</a></li>
-                            <li class="nav-item"><a class="nav-link" href="./blog.html">Blog</a></li>
-                            <li class="nav-item"><a class="btn btn-dark nav-link" href="./contactus.html">Talk to us</a></li>
-                        </ul>
+
+                <!-- Toggler -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapse-main" aria-controls="collapse-main" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <!-- End Toggler -->
+
+                <!-- Collapse -->
+                <div class="collapse navbar-collapse" id="collapse-main">
+                    <!-- Collapse header -->
+                    <div class="navbar-collapse-header d-md-none">
+                        <div class="row">
+                            <div class="col-6 collapse-brand">
+                                <a href="./index.html">
+                                    <img src="./image/Logo.png">
+                                </a>
+                            </div>
+                            <div class="col-6 collapse-close">
+                                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#collapse-main" aria-controls="collapse-main" aria-expanded="false" aria-label="Toggle sidenav">
+                                    <span></span>
+                                    <span></span>
+                                </button>
+                            </div>
+                        </div>
                     </div>
+
+                    <!-- End Collapse header -->
+
+
+                    <!-- Navigation -->
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active"><a class="nav-link" href="./works.html"> Works</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./services.html"> Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./company.html">Company</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./careers.html">Careers</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./blog.html">Blog</a></li>
+                        <li class="nav-item border-none"><a class="btn btn-dark nav-link" href="./contactus.html">Talk to us</a></li>
+                    </ul>
+                </div>
             </div>
         </nav>
+        <!-- End Navbar -->
+
+        <!-- Jumbotron -->
         <header class="header jumbotron">
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row row-header">
                     <div class="col-12 col-sm-6 py-5">
                         <h1 class="display-4">Your Mobile <br> Solutions Partner.</h1>
@@ -41,224 +74,334 @@
                         </p>
                         <a class="btn btn-light text" href="#">BOOK NOW</a>
                     </div>
-                    <div class="col-12 col-sm-6 align-self-center" style="background: url('image/home.png') right
+                    <div class="col-12 col-sm-6 align-self-center hidden-sm-down" style="background: url('image/home.png')
                     center no-repeat;">
                         <div style="height:600px;"></div>
                     </div>
                 </div>
             </div>
         </header>
+
+        <!-- End Jumbotron -->
+
+
         <div class="main">
-            <div class="container"> 
+
+            <!-- Our past jobs -->
+            <section>
+
                 <div class="row row-content">
-                    <div class="col-12 col-sm-5 offset-md-1">
-                        <div class="mt-5">
-                            <img class="image ellipse mr-3 mt-3" src="image/Ellipse.png"alt="">
-                            <img class="image bhood mr-3 mt-3" src="image/bhood-music.png"alt="">
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-6">
-                        <div class="mt-5 app-content">
-                            <h2 class="mt-5 ml-5 mr-5">Bhood App</h2>
-                            <h4 class="ml-5 mr-5">A music streaming service</h4>
-                            <p class="ml-5 mr-5">
-                            Bhood music is your one stop place for your unlimited
-                            brotherhood of the cross and star songd, videos,
-                            documentaries, short movies, gospel, newsletters</p>
-                            <a class="btn  btn-outline-dark ml-5" id="reserveButton" href="#reservation">
-                            Reserve Table
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div> 
-        </div>
-        <section class="section1">
-            <div class="container"> <div class="row row-content py-5">
-                <div class="col-12 col-sm-6">
-                    <div class=" mt-5 app-content">
-                        <h2 class="mt-5 ml-5 mr-5">Cabby Nigeria</h2>
-                        <h4 class="ml-5 mr-5">Ride Hailing Service</h4>
-                        <p class="ml-5 mr-5">
-                            Cabby Nigeria is a mobile app for quick,simple and reliable rides arround your city. 
-                            The app allows people to request for a taxi or hire a cab all from their smart phone.
-                            They provide acess to transportation service to fit your daily needs.</p>
-                        <a class="btn  btn-outline-dark ml-5" id="reserveButton" href="#reservation">
-                            Reserve Table
-                        </a>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6">
-                    <div class="mt-5">
-                        <img class="image ellipse mr-3 mt-3" src="image/Ellipse.png"alt="">
-                        <img class="image bhood mr-3 mt-3" src="image/cabby.png" alt="">
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="section2">
-            <div class="container"> 
-                <div class="row row-content py-5">
-                    <div class="col-12 col-sm-5 offset-md-1">
-                        <div class="mt-5">
-                            <img class="image ellipse mr-3 mt-3" src="image/Ellipse.png" alt="">
-                            <img class="image bhood mr-3 mt-3" src="image/killbill.png" alt="">
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-6">
-                        <div class=" mt-5 app-content">
-                            <h2 class=" mt-5 ml-5 mr-5">Bill Kill</h2>
-                            <h4 class="  ml-5 mr-5">Ride Hailing Service.</h4>
-                            <p class="  ml-5 mr-5">
-                            BillKIll is a financial App based in Norway that makes it easy for young Norwegians to take control of their personal finances.The app combines the knowledge and expertise of banking and finance with behavioural psycology and gaming
-                            mechanics to create financial service that fits the customer needs.</p>
-                            <a class="btn  btn-outline-dark ml-5" id="reserveButton" href="#reservation">
-                            Reserve Table
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="section3">
-            <div class="container">
-                <div class="row mt-5 justify-content-center">
-                    <div class="col-12 text-center">
-                        <h2 class="mt-5">Services suited for your business </h2>
-                        <p>We are a complete mobile app development company ready to help you take your<br> business to the next level.</p>
-                    </div>
-                </div>
-                <div class="row py-5">
-                    <div class="col-12">
-                        <div class="flex-container justify-content-center">
-                            <div class="card shadow-sm bg-white">
-                                <div class="card-body">
-                                    <h5 class="h5">Product Design Discovery</h5>
-                                        <p class="page">We embark on a 5-Day sprint to analyse and discuss details of the project with the client 
-                                        to uncover more about his business,the technical requirement and full design specs for what to expect.</p>
-                                </div>
-                                <div class="card-footer content">
-                                         HOW WE DO IT
-                                </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6 ellipse mr-auto">
+                                <img class="center mt-3" src="image/bhood-music.png">
                             </div>
-                            <div class="card shadow-sm bg-white">
-                                <div class="card-body">
-                                    <h5 class="h5">Project Management</h5>
-                                    <p class="page">Our project manager ensures that tasks are followed and completed on scheldule and are available.</p>
-                                </div>
-                                <div class="card-footer content">
-                                    HOW WE DO IT
-                                </div>
-                            </div>
-                            <div class="card shadow-sm bg-white">
-                                <div class="card-body">
-                                    <h5 class="h5">Android Development</h5>
-                                    <p class="page">We make use of powerful project management and efficency tools for our 
-                                    android development process to ensure that everything is seamless and detailed.</p>
-                                </div>
-                                <div class="card-footer content">
-                                    HOW WE DO IT
-                                </div>
-                            </div>
-                            <div class="card shadow-sm bg-white">
-                                <div class="card-body">
-                                    <h5 class="h5">IOS Development</h5>
-                                    <p class="page">We make use of powerful IOS development tools to ensure that the 
-                                    development process is seamless and detailed.</p>
-                                </div>
-                                <div class="card-footer content">
-                                    HOW WE DO IT
-                                </div>
-                            </div>
-                            <div class="card shadow-sm bg-white">
-                                <div class="card-body">
-                                    <h5 class="h5">UI/UX Design</h5>
-                                    <p class="page">We offer prototyping ,User experience and user interface design for our 
-                                    web and mobile products following all the stages of design thinking process.</p>
-                                </div>
-                                <div class="card-footer content">
-                                    HOW WE DO IT
-                                </div>
-                            </div>
-                            <div class="card shadow-sm bg-white">
-                                <div class="card-body">
-                                    <h5 class="h5">Web Development</h5>
-                                    <p class="page">We offer both frontend and backend development services for our clients,
-                                    Our team are experts in handling front end and back-end development stacks.</p>
-                                </div>
-                                <div class="card-footer content">
-                                    HOW WE DO IT
+                            <div class="col-md-6 ml-auto">
+                                <div class="mt-3 app-content">
+                                    <h2 class="mt-5 ml-5 mr-5">Bhood App</h2>
+                                    <h4 class="ml-5 mr-5">A music streaming service</h4>
+                                    <p class="ml-5 mr-5">
+                                        Bhood music is your one stop place for your unlimited
+                                        brotherhood of the cross and star songd, videos,
+                                        documentaries, short movies, gospel, newsletters</p>
+                                    <a class="btn  btn-outline-dark ml-5" id="reserveButton" href="#reservation">
+                                        Reserve Table
+                                    </a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>      
-        </section>
-        <section class="section4">
-            <div class="container">
+
                 <div class="row row-content">
-                    <div class="col-12 col-md-9 offset-md-2">
-                        <h1 class="mt-5 text-center">Interested in working with us?</h1>
-                        <p class="text-center">Contact us now and lets turn your app ideas into a full mobile product that  <br> 
-                            will suit your business need</p>
-                        <button type="submit" class="btn btn-lg btn-outline-dark sp">BOOK NOW</button>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6 order-sm-1 order-xs-1 order-md-12 ellipse">
+                                <img class="center mt-3" src="image/cabby.png">
+                            </div>
+
+                            <div class="col-md-6 order-sm-12 order-xs-12 order-md-1">
+                                <div class="mt-3 app-content">
+                                    <h2 class="mt-5 ml-5 mr-5">Cabby Nigeria</h2>
+                                    <h4 class="ml-5 mr-5">Ride Hailing Service</h4>
+                                    <p class="ml-5 mr-5">
+                                        Cabby Nigeria is a mobile app for quick, simple and reliable rides arround your city.
+                                        The app allows people to request for a taxi or hire a cab all from their smart phone.
+                                        They provide acess to transportation service to fit your daily needs.</p>
+                                    <a class="btn  btn-outline-dark ml-5" id="reserveButton" href="#reservation">
+                                        Reserve Table
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <footer class="footer">
+
+                <div class="row row-content">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6 ellipse">
+                                <img class="center mt-3" src="image/killbill.png">
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="mt-3 app-content">
+                                    <h2 class=" mt-5 ml-5 mr-5">Bill Kill</h2>
+                                    <h4 class="  ml-5 mr-5">Ride Hailing Service.</h4>
+                                    <p class="  ml-5 mr-5">
+                                        BillKIll is a financial App based in Norway that makes it easy for young Norwegians to take control of their personal finances.The app combines the knowledge and expertise of banking and finance with behavioural psycology and gaming
+                                        mechanics to create financial service that fits the customer needs.</p>
+                                    <a class="btn  btn-outline-dark ml-5" id="reserveButton" href="#reservation">
+                                        Reserve Table
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+
+            <!-- Services -->
+            <section class="container">
+                <div class="row">
+                    <div class="container">
+                        <div class="row mt-5 justify-content-center">
+                            <div class="col-12 text-center">
+                                <h2 class="mt-5">Services suited for your business </h2>
+                                <p>We are a complete mobile app development company ready to help you take your<br> business to the next level.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-3 mb-5">
+                    <div class="container flex-container">
+                        <div class="row">
+
+                            <div class="card-deck">
+                                <div class="card shadow-sm bg-white">
+                                    <div class="card-body">
+                                        <h5 class="h5">Product Design Discovery</h5>
+                                        <p class="page">We embark on a 5-Day sprint to analyse and discuss details of the project with the client
+                                            to uncover more about his business,the technical requirement and full design specs for what to expect.</p>
+                                    </div>
+                                    <div class="card-footer content">
+                                        HOW WE DO IT
+                                    </div>
+                                </div>
+
+
+                                <div class="card shadow-sm bg-white">
+                                    <div class="card-body">
+                                        <h5 class="h5">Project Management</h5>
+                                        <p class="page">Our project manager ensures that tasks are followed and completed on scheldule and are available.</p>
+                                    </div>
+                                    <div class="card-footer content">
+                                        HOW WE DO IT
+                                    </div>
+                                </div>
+
+                                <div class="card shadow-sm bg-white">
+                                    <div class="card-body">
+                                        <h5 class="h5">Android Development</h5>
+                                        <p class="page">We make use of powerful project management and efficency tools for our
+                                            android development process to ensure that everything is seamless and detailed.</p>
+                                    </div>
+                                    <div class="card-footer content">
+                                        HOW WE DO IT
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div class="col-lg-4 col-md-4 col-sm">
+
+                            </div>
+
+
+                            <div class="col-lg-4 col-md-4 col-sm">
+
+                            </div> -->
+
+
+                            <!-- <div class="col-lg-4 col-md-4 col-sm">
+                                
+                            </div> -->
+
+                        </div>
+
+                        <div class="row">
+                            <div class="card-deck">
+                                <div class="card shadow-sm bg-white">
+                                    <div class="card-body">
+                                        <h5 class="h5">IOS Development</h5>
+                                        <p class="page">We make use of powerful IOS development tools to ensure that the
+                                            development process is seamless and detailed.</p>
+                                    </div>
+                                    <div class="card-footer content">
+                                        HOW WE DO IT
+                                    </div>
+                                </div>
+
+                                <div class="card shadow-sm bg-white">
+                                    <div class="card-body">
+                                        <h5 class="h5">UI/UX Design</h5>
+                                        <p class="page">We offer prototyping ,User experience and user interface design for our
+                                            web and mobile products following all the stages of design thinking process.</p>
+                                    </div>
+                                    <div class="card-footer content">
+                                        HOW WE DO IT
+                                    </div>
+                                </div>
+
+
+                                <div class="card shadow-sm bg-white">
+                                    <div class="card-body">
+                                        <h5 class="h5">Web Development</h5>
+                                        <p class="page">We offer both frontend and backend development services for our clients,
+                                            Our team are experts in handling front end and back-end development stacks.</p>
+                                    </div>
+                                    <div class="card-footer content">
+                                        HOW WE DO IT
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <!-- <div class="col-lg-4 col-md-4 col-sm">
+                                
+                            </div>
+
+                            <div class="col-lg-4 col-md-4 col-sm">
+                                
+                            </div>
+
+                            <div class="col-lg-4 col-md-4 col-sm">
+                                
+                            </div> -->
+
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="section4">
                 <div class="container">
-                    <div class="row row-content ">
-                        <div class="col-12 col-md-4 col-sm-3 footer-text">
-                            <h3>About Us</h3>
-                            <p class="">Sprinthub mobile is an innovative
-                                fullstack mobile app development company driven by a strong design
-                                thinking, product development and 
-                                solutions providing merchant
+                    <div class="row row-content text-center">
+                        <div class="col-12">
+                            <h1 class="mt-5">Interested in working with us?</h1>
+                            <p class="text-center">Contact us now and lets turn your app ideas into a full mobile product that <br>
+                                will suit your business need</p>
+                            <button type="submit" class="btn btn-lg btn-outline-dark">BOOK NOW</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+
+        <footer class="footer">
+            <div class="row">
+
+                <div class="container">
+                    <div class="row row-content">
+                        <div class="col-lg-5 col-sm-12 footer-text">
+                            <div class="row">
+                                <h3>About Us</h3>
+                                <p class="">Sprinthub mobile is an innovative
+                                    fullstack mobile app development company driven by a strong design
+                                    thinking, product development and
+                                    solutions providing merchant
+                                </p>
+                                <address>
+                                    (+234) 812 873 9485<br>
+                                    No 6 Chief Matthew Close behind<br>
+                                    Royal House of Grace Church, Tombia<br>
+                                    Extension, Port Harcourt, Rivers State.
+                                </address>
+                            </div>
+
+                        </div>
+
+                        <div class="col-lg-7 col-sm-12">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <h3>Sitemap</h3>
+                                    <ul class="list-unstyled">
+                                        <li><a class="nav-link" href="./index.html"> Works</a></li>
+                                        <li><a class="nav-link" href="./aboutus.html">Services</a></li>
+                                        <li><a class="nav-link" href="./accomodation.html">Company</a></li>
+                                        <li><a class="nav-link" href="./aboutus.html">Blog</a></li>
+                                        <li><a class="nav-link" href="./accomodation.html">Presskit</a></li>
+                                    </ul>
+                                </div>
+
+
+                                <div class="col-md-4">
+                                    <h3>Contact Us</h3>
+
+                                    <h5>Phone</h5>
+
+
+                                    <h5>Email</h5>
+                                    <p><a href="mailto:hello@sprinthubmobile.com">hello@sprinthubmobile.com</a></p>
+
+
+                                    <h5>Social</h5>
+
+
+                                </div>
+
+
+                                <div class="col-md-5">
+                                    <h4>Opening Hours</h4>
+                                    <p>Mon-Fri 8:00am - 17:00pm</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+
+
+                    <!-- <div class="col-12 col-md-4 col-sm-3  footer-text">
+                        
+                    </div> -->
+                </div>
+
+            </div>
+
+
+            <hr>
+            <div class="row">
+                <div class="container">
+                    <div class="col-12">
+                        <div class="text-right">
+                            <p>
+                                Copyright &copy;
+                                <script>
+                                    document.write(new Date().getFullYear());
+                                </script>
+                                All rights reserved
                             </p>
                         </div>
-                        <div class="col-12 col-md-4 col-sm-3">
-                            <div class="justify-content-center">
-                                <h3 class="">Sitemap</h3>
-                                <div class="row">
-                                    <div class="col-4">
-                                        <ul class="list-unstyled">
-                                            <li><a class="nav-link" href="./index.html"> Works</a></li>
-                                            <li><a class="nav-link" href="./aboutus.html">Services</a></li>
-                                            <li><a class="nav-link" href="./accomodation.html">Company</a></li>
-                                            <li><a class="nav-link" href="./aboutus.html">Blog</a></li>
-                                            <li><a class="nav-link" href="./accomodation.html">Presskit</a></li>
-                                        </ul>
-                                    </div>	
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-4 col-sm-3  footer-text">
-                            <h5>Contact Us</h5>
-                            <address>
-                                (+234) 812 873 9485<br>
-                                No 6 Chief Matthew Close behind<br>
-                                Royal House of Grace Church, Tombia<br>
-                                Extension, Port Harcourt, Rivers State<br><br>
-                                <a href="mailto:hello@sprinthubmobile.com">hello@sprinthubmobile.com</a><br>
-                                Mon-Fri 8:00am - 17:00pm
-                            </address>
-                        </div>
-                    </div>
-                    <hr>
-                    <div class="row">             
-                        <div class="col-12">
-                            <div class="text-right">
-                                <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved</p>
-                            </div>
-                        </div>
                     </div>
                 </div>
-            </footer>
+            </div>
+        </footer>
+
     </div>
+
+    <script type="text/javascript" src="./assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./assets/js/page.js"></script>
 </body>
-<script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+<!-- <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
 <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script> -->
+
 </html>
