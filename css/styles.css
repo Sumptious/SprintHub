@@ -5,7 +5,7 @@ body{
     margin: 0;
     padding: 0;
     font-family:  Helvetica ;
-    /* scroll-behavior: smooth; */
+    scroll-behavior: smooth;
 }
 .row-header {
     margin: 0px auto;
@@ -13,11 +13,7 @@ body{
 .row-content {
         margin: 0px auto;
         padding: 50px 0px;
-        /* border-bottom: 1px ridge; */
         min-height: 400px; 
-    }
-    *box-sizing{
-
     }
         
 .grid{
@@ -30,7 +26,8 @@ body{
     z-index: 3;
 }
 .nav-item{
-    padding-left: 20px;
+    padding-left: 10px;
+    font-size: 18px;
 }
 .nav-link{
     color: rgb(68, 65, 65);
@@ -50,13 +47,11 @@ body{
     grid-row: 3/ 4 ;
 }
 .ellipse{
-    /* position: absolute; */
     margin-top: 18%;
     z-index: 1;
 }
 .bhood{
     position: absolute;
-    /* top: 5%; */
     left: 12%;
     z-index: 2;
 }
@@ -66,9 +61,6 @@ body{
 .display{
     display: flex;
     flex-wrap: wrap;
-}
-.display > div{
-    /* margin: 20px; */
 }
 .h5{
     font-size: 18px;
@@ -156,9 +148,6 @@ body{
 .nav-link{
     color: rgb(68, 65, 65);
 }
-.nav-item{
-    padding-left: 20px;
-}
 .btn-dark{
     color: #fff;
 }
@@ -177,21 +166,6 @@ body{
 .display-4{
     font-weight: bold;
 }
-/* .ellipse{
-    position: absolute;
-    top: 25%;
-    z-index: 1;
-}
-.bhood{
-    position: absolute;
-    top: 5%;
-    left: 15%;
-    z-index: 2;
-}
-.app-content{
-    padding: 30% 0 0 15%;
-} */
-
 .left{
     float:left;
 }
@@ -249,11 +223,6 @@ body{
 .h5, .page{
     text-align: center;
 }
-.content::after{
-    content: "\2192 " !important;
-    font-size: 25px;
-    margin-left: 40%; 
-}
 .picture{
     height: 400px;
 }
@@ -297,9 +266,7 @@ body{
 .nav-link{
     color: rgb(68, 65, 65);
 }
-.nav-item{
-    padding-left: 20px;
-}
+
 .btn-dark{
     color: #fff;
 }
@@ -322,12 +289,6 @@ body{
 .box{
     border: 1px solid rgba(228, 226, 243, 0.7) !important;
     border-top: 0 !important; 
-}
-
-.content::after{
-    content: "\2192 " !important;
-    font-size: 20px;
-    margin-left: 20px; 
 }
 .card-footer{
     background-color: #fff;
@@ -448,7 +409,6 @@ hr{
 }
 .card-horizontal{
     display: flex;
-    flex: auto;
 }
 
 /* presskit */
@@ -491,36 +451,85 @@ hr{
     .top{
         background-position: center !important;
     }
-    .app-content{
-        /* padding: none; */
-    }
-    .ellipse{
-        /* top: 50%; */
+    .position2{
+        display:flex;
     }
     .bhood{
         position: absolute;
         top: 0%;
-        left: 15%;
+        margin-right:5% !important;
         z-index: 2;
+    }
+    .left-column{
+        float: left;
+        width: auto;
+    }
+    .right-column{
+        float: left;
+        width: auto;
+    }
+    .card-horizontal{
+        display: block;
     }
 }
 @media only screen and (max-width: 768px) {
-    body{
-        padding: none !important;
+    .nav-item{
+        font-size: 80%;
     }
+    
     .top{
         background-position: left center !important;
     }
+    .app-content{
+        padding: 30% 0 0 20%;
+    }
+    .blogBox{
+        height: 280px !important;
+        width: 280px !important;
+    }
+    .left-column{
+        float: left;
+        width: auto;
+    }
+    .right-column{
+        float: left;
+        width: auto;
+        padding: 10px;
+        /* width: 25%; */
+    }
+    .d-btn{
+        margin-left: 30%;
+    }
+    .ellipse{
+        margin-left: -5%;
+    }
+   
     .bhood{
         position: absolute;
         top: 0%;
         left: 15%;
         z-index: 2;
+        margin-left: 0 !important;
+    }
+    .position2{
+        display: flex;
+        flex-direction: column;
+    }
+    .gray{
+        border-radius: 5px;
+    }
+    .card-sm {
+        display: flex;
+        flex-direction: column;
     }
 }
 @media only screen and (max-width: 1024px) {
     .top{
         background-position: center !important;
+    }
+    .blogBox{
+        height: 300px;
+        width: 300px;
     }
     .bhood{
         position: absolute;
