@@ -4,7 +4,7 @@
 body{
     margin: 0;
     padding: 0;
-    font-family:  Helvetica ;
+    font-family:  'Helvetica' ;
     scroll-behavior: smooth;
 }
 .row-header {
@@ -28,7 +28,19 @@ body{
 .nav-item{
     padding-left: 10px;
     font-size: 18px;
+    display: inline;
 }
+.Search{
+    padding: 0 !important;
+    width: 20% !important;
+    margin-left: 0;
+}
+ul > li{
+    display: inline;
+}
+/* .logo-color{
+    background-color: #fff;
+} */
 .nav-link{
     color: rgb(68, 65, 65);
 }
